@@ -1,0 +1,57 @@
+
+body{
+    position: relative;
+    background-color: rgb(42, 38, 38);
+}
+#form {
+    color: white;
+    background-image: url(https://www.gstatic.com/keep/backgrounds/music_dark_0609.svg);
+    min-width: 300px;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    min-height: 300px;
+    border-radius: 5px;
+}
+#form .listDo  {
+    margin-top: 10px;
+    padding-left: 0px;
+}
+#form .listDo .ItemDo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 1px 3px;
+    position: relative;
+    font-size: 10px;
+    
+}
+#form .listDo .ItemDo .i_delete {
+    transition: .2s;
+    opacity: 0;
+}
+#form .listDo .ItemDo:hover  {
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.5);
+}
+#form .listDo .ItemDo:hover .i_delete {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#form .listDo .ItemDo p {
+    margin: 0px;
+}
+input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.671);
+    border: none;
+    outline: none;
+    font-size: 10px;
+}
+#form .listDo .comple {
+    opacity: 0.5;
+}
